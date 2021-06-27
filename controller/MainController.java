@@ -31,6 +31,7 @@ public class MainController implements Initializable {
                     stageFuncionario.setScene(sceneFuncionario);
                     stageFuncionario.show();
         }
+        
         if(textField.getText().equals("aluno") && passwordField.getText().equals("123")) {
             anchorPaneLogin.getScene().getWindow().hide();
             Parent mainAluno = FXMLLoader.load(getClass().getResource("/view/Aluno.fxml"));
