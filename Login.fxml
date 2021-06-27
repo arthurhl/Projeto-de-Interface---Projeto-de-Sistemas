@@ -2,16 +2,16 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="205.0" layoutY="179.0" text="Usuário" />
       <Label layoutX="209.0" layoutY="219.0" text="Senha" />
       <TextField layoutX="268.0" layoutY="175.0" />
-      <TextField layoutX="268.0" layoutY="215.0" />
-      <Button layoutX="268.0" layoutY="268.0" mnemonicParsing="false" text="Login" />
+      <Button layoutX="268.0" layoutY="268.0" mnemonicParsing="false" styleClass="ButtonLogin" text="Login" />
+      <PasswordField layoutX="269.0" layoutY="214.0" />
    </children>
 </AnchorPane>
