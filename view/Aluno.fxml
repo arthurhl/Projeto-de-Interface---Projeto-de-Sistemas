@@ -8,6 +8,8 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlunoController">
@@ -16,6 +18,11 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
+                  <ImageView fitHeight="399.0" fitWidth="726.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Frame%20-%20Copia.jpg" />
+                     </image>
+                  </ImageView>
                   <Button layoutX="36.0" layoutY="327.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Criar " AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="60.0" />
                   <Button layoutX="139.0" layoutY="327.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Participar" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="60.0" />
                   <Label layoutX="14.0" layoutY="14.0" styleClass="LabelDetails" text="Grupo" />
@@ -27,6 +34,11 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
+                  <ImageView fitHeight="398.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Frame.jpg" />
+                     </image>
+                  </ImageView>
                   <TableView layoutX="37.0" layoutY="243.0" prefHeight="155.0" prefWidth="296.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="243.0">
                     <columns>
                       <TableColumn prefWidth="179.0" text="GRUPO" />

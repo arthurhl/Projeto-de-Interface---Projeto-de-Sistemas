@@ -71,9 +71,10 @@
 .CheckBoxAvailable {
   -fx-background-color: #48cae4;
   -fx-text-fill: #FFFFFF;
-  -fx-background-radius: 0 0 0 0;
-  -fx-border-insets: 5 0 5 0;
+  -fx-background-radius: 0 10 0 0;
   -fx-border-radius: 50;
+  -fx-padding: 4 4 4 4;
+  fx-alignment: center;
 }
 
 .LabelTitle {
@@ -92,4 +93,5 @@
   -fx-font-family:'monospace';
   -fx-font-size: 18px;
   -fx-font-weight: 700;
+  -fx-text-fill:#FFFFFF;
 }

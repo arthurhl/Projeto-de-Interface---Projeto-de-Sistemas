@@ -11,6 +11,8 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -32,6 +34,11 @@
                <children>
                   <AnchorPane layoutY="-3.0" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
+                        <ImageView fitHeight="430.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@600x400.png" />
+                           </image>
+                        </ImageView>
                         <Button layoutX="262.0" layoutY="293.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Cadastrar" AnchorPane.bottomAnchor="40.0" />
                         <Label layoutX="211.0" layoutY="50.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Cadastrar Aluno" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="20.0" />
                         <GridPane layoutX="130.0" layoutY="140.0" prefHeight="120.0" prefWidth="340.0">
@@ -60,6 +67,11 @@
                   </AnchorPane>
                   <AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
+                        <ImageView fitHeight="400.0" fitWidth="643.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@600x400.png" />
+                           </image>
+                        </ImageView>
                         <Label layoutX="200.0" layoutY="66.0" styleClass="LabelDetails" text="Nome" />
                         <TextField layoutX="250.0" layoutY="65.0" prefHeight="25.0" prefWidth="150.0" />
                         <Button layoutX="195.0" layoutY="322.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Incluir" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="210.0" />
@@ -70,6 +82,11 @@
                   </AnchorPane>
                   <AnchorPane accessibleRole="BUTTON" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
+                        <ImageView fitHeight="400.0" fitWidth="703.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@600x400.png" />
+                           </image>
+                        </ImageView>
                         <Label layoutX="261.0" layoutY="6.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Alterar Sala" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="20.0" />
                         <Label layoutX="200.0" layoutY="71.0" styleClass="LabelDetails" text="Nome" AnchorPane.topAnchor="66.0" />
                         <TextField layoutX="248.0" layoutY="65.0" prefHeight="25.0" prefWidth="150.0" AnchorPane.rightAnchor="201.0" AnchorPane.topAnchor="65.0" />
@@ -85,6 +102,11 @@
                           <items>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="AnchorPane">
                                  <children>
+                                    <ImageView fitHeight="400.0" fitWidth="669.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Frame.jpg" />
+                                       </image>
+                                    </ImageView>
                                     <Button layoutX="52.0" layoutY="285.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Incluir" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="60.0" />
                                     <Button layoutX="176.0" layoutY="326.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRemove" text="Excluir" AnchorPane.bottomAnchor="55.0" AnchorPane.rightAnchor="60.0" />
                                     <Button layoutX="176.0" layoutY="285.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Alterar" AnchorPane.bottomAnchor="90.0" AnchorPane.rightAnchor="60.0" />
@@ -113,6 +135,11 @@
                            <items>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                                  <children>
+                                    <ImageView fitHeight="537.0" fitWidth="662.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Frame.jpg" />
+                                       </image>
+                                    </ImageView>
                                     <Button layoutX="111.0" layoutY="349.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Agendar" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="111.0" />
                                     <Label layoutX="95.0" layoutY="22.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Informações da Sala" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="20.0" />
                                     <TextArea layoutX="50.0" layoutY="73.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.topAnchor="65.0" />

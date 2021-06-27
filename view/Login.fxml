@@ -4,14 +4,21 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="anchorPaneLogin" prefHeight="300.0" prefWidth="400.0" styleClass="AnchorPane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+<AnchorPane fx:id="anchorPaneLogin" prefHeight="200.0" prefWidth="400.0" styleClass="AnchorPane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
    <children>
-      <Label layoutX="115.0" layoutY="167.0" prefHeight="25.0" prefWidth="45.0" text="Usuário" />
-      <Label layoutX="115.0" layoutY="198.0" prefHeight="25.0" prefWidth="45.0" text="Senha" />
-      <TextField fx:id="textField" layoutX="160.0" layoutY="167.0" prefHeight="25.0" />
-      <Button layoutX="160.0" layoutY="209.0" mnemonicParsing="false" onAction="#logar" prefHeight="25.0" prefWidth="80.0" styleClass="ButtonLogin" text="Login" AnchorPane.bottomAnchor="30.0" />
-      <PasswordField fx:id="passwordField" layoutX="160.0" layoutY="198.0" prefHeight="25.0" />
+      <ImageView fitHeight="291.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@frameloginjpg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="105.0" prefHeight="25.0" prefWidth="80.0" styleClass="LabelDetails" text="Usuário" />
+      <Label layoutX="51.0" layoutY="136.0" prefHeight="25.0" prefWidth="80.0" styleClass="LabelDetails" text="Senha" />
+      <TextField fx:id="textField" layoutX="131.0" layoutY="105.0" prefHeight="25.0" />
+      <Button layoutX="160.0" layoutY="209.0" mnemonicParsing="false" onAction="#logar" prefHeight="25.0" prefWidth="80.0" styleClass="ButtonLogin" text="Login" AnchorPane.bottomAnchor="20.0" />
+      <PasswordField fx:id="passwordField" layoutX="131.0" layoutY="136.0" prefHeight="25.0" />
    </children>
 </AnchorPane>
