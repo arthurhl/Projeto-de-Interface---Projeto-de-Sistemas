@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox styleClass="AnchorPane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<VBox styleClass="AnchorPane" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <MenuBar prefHeight="25.0" prefWidth="600.0" styleClass="MenuBar">
         <menus>
@@ -25,18 +25,18 @@
       </MenuBar>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane">
          <children>
-            <AnchorPane layoutY="-3.0" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane layoutY="-3.0" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <Label layoutX="181.0" layoutY="172.0" styleClass="LabelDetails" text="Nome" />
                   <TextField layoutX="288.0" layoutY="134.0" />
-                  <Button layoutX="262.0" layoutY="293.0" mnemonicParsing="false" styleClass="ButtonLogin" text="Cadastrar" />
+                  <Button layoutX="262.0" layoutY="293.0" mnemonicParsing="false" styleClass="ButtonRegister" text="Cadastrar" />
                   <Label layoutX="172.0" layoutY="138.0" styleClass="LabelDetails" text="Matrícula" />
                   <TextField layoutX="288.0" layoutY="168.0" />
                   <Label layoutX="183.0" layoutY="207.0" styleClass="LabelDetails" text="Email" />
                   <Label layoutX="175.0" layoutY="245.0" styleClass="LabelDetails" text="Telefone" />
                   <TextField layoutX="288.0" layoutY="203.0" />
                   <TextField layoutX="288.0" layoutY="241.0" />
-                  <Label layoutX="253.0" layoutY="49.0" styleClass="LabelTitle" text="Cadastrar Aluno" />
+                  <Label layoutX="211.0" layoutY="50.0" prefHeight="35.0" prefWidth="180.0" styleClass="LabelTitle" text="Cadastrar Aluno" />
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -46,10 +46,10 @@
                   <Button layoutX="195.0" layoutY="322.0" mnemonicParsing="false" styleClass="ButtonRegister" text="Incluir" />
                   <Button layoutX="269.0" layoutY="322.0" mnemonicParsing="false" styleClass="ButtonRemove" text="Cancelar" />
                   <TextArea layoutX="187.0" layoutY="108.0" prefHeight="200.0" prefWidth="200.0" />
-                  <Label layoutX="235.0" layoutY="23.0" styleClass="LabelTitle" text="Incluir Sala" />
+                  <Label layoutX="202.0" layoutY="14.0" prefHeight="35.0" prefWidth="171.0" styleClass="LabelTitle" text="Incluir Sala" />
                </children>
             </AnchorPane>
-            <AnchorPane accessibleRole="BUTTON" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane accessibleRole="BUTTON" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <Label layoutX="261.0" layoutY="6.0" styleClass="LabelTitle" text="Alterar Sala" />
                   <Label layoutX="154.0" layoutY="48.0" styleClass="LabelDetails" text="Nome" />
@@ -57,7 +57,7 @@
                   <TextArea layoutX="174.0" layoutY="83.0" prefHeight="122.0" prefWidth="200.0" />
                   <Button layoutX="187.0" layoutY="339.0" mnemonicParsing="false" styleClass="ButtonRegister" text="Alterar" />
                   <Button layoutX="294.0" layoutY="339.0" mnemonicParsing="false" styleClass="ButtonRemove" text="Cancelar" />
-                  <CheckBox layoutX="222.0" layoutY="276.0" mnemonicParsing="false" text="Disponibilidade" />
+                  <CheckBox layoutX="222.0" layoutY="276.0" mnemonicParsing="false" styleClass="CheckBoxAvailable" text="Disponibilidade" />
                </children>
             </AnchorPane>
             <AnchorPane layoutY="-3.0" prefHeight="361.0" prefWidth="600.0" styleClass="AnchorPane" visible="false" AnchorPane.bottomAnchor="0.0">

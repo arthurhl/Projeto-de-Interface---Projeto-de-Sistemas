@@ -4,20 +4,21 @@
 
 .MenuBar {
   -fx-font-size: 14px;
-  -fx-spacing: 80;
-  -fx-font-weight: 600;
+  -fx-spacing: 70;
+  -fx-font-weight: 700;
   -fx-alignment: center;
-  -fx-background-color:#52b788;
+  -fx-background-color:#0096c7;
+  -fx-text-fill: #FFFFFF;
 }
 
 .ButtonLogin {
   -fx-font-weight: 700;
-  -fx-background-color: #74c69d;
+  -fx-background-color: #00b4d8;
   -fx-text-fill: #FFFFFF;
 }
 
 .ButtonLogin:hover {
-  -fx-background-color: #40916c;
+  -fx-background-color: #0077b6;
   -fx-text-fill: #FFFFFF;
   -fx-opacity: 10.0;
 }
@@ -28,18 +29,18 @@
 }
 
 .ButtonRegister {
-  -fx-background-color: #b7e4c7;
+  -fx-background-color: #00b4d8;
   -fx-background-radius: 12;
-  -fx-border-color: #000000;
+  
+  -fx-text-fill: #FFFFFF;
   -fx-border-radius: 12;
   -fx-font-size: 12px;
   -fx-font-weight: 900;
 }
 
 .ButtonRegister:hover {
-  -fx-background-color: #52b788;
+  -fx-background-color: #0077b6;
   -fx-text-fill: #FFFFFF;
-  -fx-border-color: #000000;
 }
 
 .ButtonRegister:pressed {
@@ -48,12 +49,12 @@
 } 
 
 .ButtonRemove {
-  -fx-background-color: #b7e4c7;
+  -fx-background-color: #00b4d8;
   -fx-background-radius: 12;
-  -fx-border-color: #000000;
   -fx-border-radius: 12;
   -fx-font-size: 12px;
   -fx-font-weight: 900;
+  -fx-text-fill: #FFFFFF;
 }
 
 .ButtonRemove:hover {
@@ -67,15 +68,23 @@
   -fx-scale-x: 0.9;
 } 
 
+.CheckBoxAvailable {
+  -fx-background-color: #48cae4;
+  -fx-text-fill: #FFFFFF;
+  -fx-background-radius: 0 0 0 0;
+  -fx-border-insets: 5 0 5 0;
+  -fx-border-radius: 50;
+}
+
 .LabelTitle {
-  -fx-font-size: Arial 22px;
-  -fx-background-color: #52b788;
+  -fx-font-size: 14px;
+  -fx-background-color: #48cae4;
   -fx-text-fill: #FFFFFF;
   -fx-background-radius: 0 15 0 15;
   -fx-border-insets: 5 0 5 0;
   -fx-border-radius: 10;
   -fx-padding: 8 12 8 12;
-  -fx-font-weight: 600;
+  -fx-font-weight: 900;
   -fx-alignment: center;
 }
 
