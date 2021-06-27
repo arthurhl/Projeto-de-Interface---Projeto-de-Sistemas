@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
@@ -13,24 +10,24 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlunoController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlunoController">
    <children>
       <SplitPane dividerPositions="0.5" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <Button layoutX="36.0" layoutY="327.0" mnemonicParsing="false" styleClass="ButtonRegister" text="Criar grupo" />
-                  <Button layoutX="139.0" layoutY="327.0" mnemonicParsing="false" styleClass="ButtonRegister" text="Participar do grupo" />
-                  <Label layoutX="9.0" layoutY="34.0" styleClass="LabelDetails" text="Grupo" />
-                  <Button layoutX="215.0" layoutY="33.0" mnemonicParsing="false" styleClass="ButtonRegister" text="Pesquisar" />
-                  <TextArea layoutX="48.0" layoutY="106.0" prefHeight="200.0" prefWidth="200.0" />
-                  <Label layoutX="76.0" layoutY="69.0" styleClass="LabelTitle" text="Informações do Grupo" />
-                  <TextField layoutX="65.0" layoutY="32.0" />
+                  <Button layoutX="36.0" layoutY="327.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Criar " AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="60.0" />
+                  <Button layoutX="139.0" layoutY="327.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Participar" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="60.0" />
+                  <Label layoutX="14.0" layoutY="14.0" styleClass="LabelDetails" text="Grupo" />
+                  <Button layoutX="213.0" layoutY="14.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Pesquisar" />
+                  <TextArea layoutX="50.0" layoutY="106.0" prefHeight="215.0" prefWidth="200.0" />
+                  <Label layoutX="76.0" layoutY="69.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Informações do Grupo" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="60.0" />
+                  <TextField layoutX="70.0" layoutY="14.0" prefHeight="23.0" prefWidth="138.0" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <TableView layoutX="37.0" layoutY="185.0" prefHeight="213.0" prefWidth="296.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="185.0">
+                  <TableView layoutX="37.0" layoutY="243.0" prefHeight="155.0" prefWidth="296.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="243.0">
                     <columns>
                       <TableColumn prefWidth="179.0" text="GRUPO" />
                       <TableColumn prefWidth="115.0" text="DISPONIBILIDADE" />
@@ -39,10 +36,10 @@
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                      </columnResizePolicy>
                   </TableView>
-                  <ListView layoutX="48.0" layoutY="62.0" prefHeight="76.0" prefWidth="200.0" />
-                  <Button layoutX="77.0" layoutY="150.0" mnemonicParsing="false" styleClass="ButtonRegister" text="Aceitar" />
-                  <Button layoutX="159.0" layoutY="150.0" mnemonicParsing="false" styleClass="ButtonRemove" text="Cancelar" />
-                  <Label layoutX="113.0" layoutY="22.0" styleClass="LabelTitle" text="Convites" />
+                  <ListView layoutX="48.0" layoutY="60.0" prefHeight="135.0" prefWidth="200.0" />
+                  <Button layoutX="77.0" layoutY="150.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Aceitar" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="60.0" />
+                  <Button layoutX="159.0" layoutY="150.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRemove" text="Cancelar" AnchorPane.bottomAnchor="170.0" AnchorPane.rightAnchor="60.0" />
+                  <Label layoutX="44.0" layoutY="21.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Convites" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="15.0" />
                </children>
             </AnchorPane>
         </items>
