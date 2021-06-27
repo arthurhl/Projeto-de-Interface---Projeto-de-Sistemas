@@ -11,7 +11,7 @@
       <Label layoutX="205.0" layoutY="179.0" text="Usuário" />
       <Label layoutX="209.0" layoutY="219.0" text="Senha" />
       <TextField layoutX="268.0" layoutY="175.0" />
-      <TextField layoutX="268.0" layoutY="215.0" />
+      <PasswordField layoutX="268.0" layoutY="215.0" />
       <Button layoutX="268.0" layoutY="268.0" mnemonicParsing="false" text="Login" />
    </children>
 </AnchorPane>
