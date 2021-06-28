@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.SplitPane?>
@@ -14,47 +16,95 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlunoController">
    <children>
-      <SplitPane dividerPositions="0.5" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                  <ImageView fitHeight="405.0" fitWidth="296.0" layoutY="-2.0" pickOnBounds="true">
-                     <image>
-                        <Image url="@Frame%20-%20Copia.jpg" />
-                     </image>
-                  </ImageView>
-                  <Button layoutX="36.0" layoutY="327.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Criar " AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="60.0" />
-                  <Button layoutX="139.0" layoutY="327.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Participar" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="60.0" />
-                  <Label layoutX="14.0" layoutY="14.0" styleClass="LabelDetails" text="Grupo" />
-                  <Button layoutX="213.0" layoutY="14.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Pesquisar" />
-                  <TextArea layoutX="50.0" layoutY="106.0" prefHeight="215.0" prefWidth="200.0" />
-                  <Label layoutX="76.0" layoutY="69.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Informações do Grupo" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="60.0" />
-                  <TextField layoutX="70.0" layoutY="14.0" prefHeight="23.0" prefWidth="138.0" />
-               </children>
-            </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                  <ImageView fitHeight="405.0" fitWidth="634.0" layoutX="-338.0" pickOnBounds="true">
-                     <image>
-                        <Image url="@Frame.jpg" />
-                     </image>
-                  </ImageView>
-                  <TableView layoutX="37.0" layoutY="243.0" prefHeight="155.0" prefWidth="296.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="243.0">
-                    <columns>
-                      <TableColumn prefWidth="179.0" text="GRUPO" />
-                      <TableColumn prefWidth="115.0" text="DISPONIBILIDADE" />
-                    </columns>
-                     <columnResizePolicy>
-                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-                     </columnResizePolicy>
-                  </TableView>
-                  <ListView layoutX="48.0" layoutY="60.0" prefHeight="135.0" prefWidth="200.0" />
-                  <Button layoutX="77.0" layoutY="150.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Aceitar" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="60.0" />
-                  <Button layoutX="159.0" layoutY="150.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRemove" text="Cancelar" AnchorPane.bottomAnchor="170.0" AnchorPane.rightAnchor="60.0" />
-                  <Label layoutX="44.0" layoutY="21.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Convites" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="15.0" />
-               </children>
-            </AnchorPane>
-        </items>
-      </SplitPane>
+      <AnchorPane styleClass="AnchorPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <SplitPane dividerPositions="0.5" prefHeight="400.0" prefWidth="600.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="399.0" fitWidth="726.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@Frame%20-%20Copia.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="36.0" layoutY="327.0" mnemonicParsing="false" onAction="#criar" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Criar " AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="60.0" />
+                        <Button layoutX="139.0" layoutY="327.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Participar" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="60.0" />
+                        <Label layoutX="14.0" layoutY="14.0" styleClass="LabelDetails" text="Grupo" />
+                        <Button layoutX="213.0" layoutY="14.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Pesquisar" />
+                        <TextArea layoutX="50.0" layoutY="106.0" prefHeight="215.0" prefWidth="200.0" />
+                        <Label layoutX="76.0" layoutY="69.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Informações do Grupo" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="60.0" />
+                        <TextField layoutX="70.0" layoutY="14.0" prefHeight="23.0" prefWidth="138.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="467.0" fitWidth="1052.0" layoutX="-452.0" layoutY="-38.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@Frame.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView layoutX="2.0" layoutY="273.0" prefHeight="155.0" prefWidth="296.0" AnchorPane.bottomAnchor="-30.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="273.0">
+                          <columns>
+                            <TableColumn prefWidth="179.0" text="GRUPO" />
+                            <TableColumn prefWidth="115.0" text="DISPONIBILIDADE" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <ListView layoutX="48.0" layoutY="60.0" prefHeight="135.0" prefWidth="200.0" />
+                        <Button layoutX="77.0" layoutY="150.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Aceitar" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="60.0" />
+                        <Button layoutX="159.0" layoutY="150.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRemove" text="Cancelar" AnchorPane.bottomAnchor="170.0" AnchorPane.rightAnchor="60.0" />
+                        <Label layoutX="44.0" layoutY="21.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Convites" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="15.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" visible="false">
+         <children>
+            <SplitPane dividerPositions="0.5" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="398.0" fitWidth="977.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@Frame%20-%20Copia.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="51.0" layoutY="59.0" styleClass="LabelDetails" text="Nome" />
+                        <TextField layoutX="100.0" layoutY="59.0" />
+                        <Label layoutX="48.0" layoutY="182.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Informações do Grupo" />
+                        <Button layoutX="114.0" layoutY="337.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="85.0" styleClass="ButtonRegister" text="Criar grupo" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="105.0" />
+                        <Label layoutX="35.0" layoutY="14.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Criar Grupo" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="20.0" />
+                        <ComboBox fx:id="comboBox" layoutX="50.0" layoutY="144.0" prefHeight="23.0" prefWidth="200.0" promptText="Quantidade de Alunos" />
+                        <TextArea layoutX="50.0" layoutY="223.0" prefHeight="115.0" prefWidth="200.0" />
+                        <DatePicker layoutX="101.0" layoutY="86.0" prefHeight="23.0" prefWidth="150.0" />
+                        <Label layoutX="51.0" layoutY="86.0" styleClass="LabelDetails" text="Data" />
+                        <Label layoutX="51.0" layoutY="110.0" styleClass="LabelDetails" text="Hora" />
+                        <TextField layoutX="100.0" layoutY="122.0" prefHeight="23.0" prefWidth="150.0" AnchorPane.topAnchor="114.0" />
+                        <Button layoutX="43.0" layoutY="350.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="399.0" fitWidth="660.0" layoutX="-206.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Frame%20-%20Copia.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="90.0" layoutY="328.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" styleClass="ButtonRegister" text="Enviar convite" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="95.0" />
+                        <Label layoutX="35.0" layoutY="67.0" prefHeight="23.0" prefWidth="55.0" styleClass="LabelDetails" text="Aluno" AnchorPane.rightAnchor="202.0" />
+                        <TextField layoutX="101.0" layoutY="67.0" prefHeight="23.0" prefWidth="150.0" />
+                        <Button layoutX="103.0" layoutY="102.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Pesquisar" AnchorPane.leftAnchor="105.0" />
+                        <Label layoutX="50.0" layoutY="46.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Convidar Alunos" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="20.0" />
+                        <ListView layoutX="50.0" layoutY="139.0" prefHeight="186.0" prefWidth="200.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

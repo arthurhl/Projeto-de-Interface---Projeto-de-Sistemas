@@ -42,14 +42,14 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastrarController">
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastrarController">
    <children>
       <ImageView fitHeight="430.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@600x400.png" />
          </image>
       </ImageView>
-      <Button layoutX="262.0" layoutY="293.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Cadastrar" AnchorPane.bottomAnchor="40.0" />
+      <Button layoutX="262.0" layoutY="293.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRegister" text="Cadastrar" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="200.0" />
       <Label layoutX="211.0" layoutY="50.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Cadastrar Aluno" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="20.0" />
       <GridPane layoutX="130.0" layoutY="140.0" prefHeight="120.0" prefWidth="340.0">
          <columnConstraints>
@@ -73,6 +73,6 @@
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
-      <Button layoutX="374.0" layoutY="335.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Button layoutX="374.0" layoutY="335.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRemove" text="Cancelar" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="200.0" />
    </children>
 </AnchorPane>
