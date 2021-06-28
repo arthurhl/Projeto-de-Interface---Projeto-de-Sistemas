@@ -16,7 +16,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlunoController">
    <children>
-      <AnchorPane styleClass="AnchorPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane styleClass="AnchorPane" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <SplitPane dividerPositions="0.5" prefHeight="400.0" prefWidth="600.0">
               <items>
@@ -62,7 +62,7 @@
             </SplitPane>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane" visible="false">
+      <AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="AnchorPane">
          <children>
             <SplitPane dividerPositions="0.5" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
               <items>
@@ -76,7 +76,8 @@
                         <Label layoutX="51.0" layoutY="59.0" styleClass="LabelDetails" text="Nome" />
                         <TextField layoutX="100.0" layoutY="59.0" />
                         <Label layoutX="48.0" layoutY="182.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Informações do Grupo" />
-                        <Button layoutX="114.0" layoutY="337.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="85.0" styleClass="ButtonRegister" text="Criar grupo" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="105.0" />
+                        <Button layoutX="114.0" layoutY="337.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="85.0" styleClass="ButtonRegister" text="Criar grupo" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="60.0" />
+                        <Button mnemonicParsing="false" onAction="#cancelar" prefHeight="20.0" prefWidth="75.0" styleClass="ButtonRemove" text="Cancelar" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="60.0" />
                         <Label layoutX="35.0" layoutY="14.0" prefHeight="35.0" prefWidth="200.0" styleClass="LabelTitle" text="Criar Grupo" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="20.0" />
                         <ComboBox fx:id="comboBox" layoutX="50.0" layoutY="144.0" prefHeight="23.0" prefWidth="200.0" promptText="Quantidade de Alunos" />
                         <TextArea layoutX="50.0" layoutY="223.0" prefHeight="115.0" prefWidth="200.0" />
@@ -84,7 +85,6 @@
                         <Label layoutX="51.0" layoutY="86.0" styleClass="LabelDetails" text="Data" />
                         <Label layoutX="51.0" layoutY="110.0" styleClass="LabelDetails" text="Hora" />
                         <TextField layoutX="100.0" layoutY="122.0" prefHeight="23.0" prefWidth="150.0" AnchorPane.topAnchor="114.0" />
-                        <Button layoutX="43.0" layoutY="350.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
                      </children>
                   </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
